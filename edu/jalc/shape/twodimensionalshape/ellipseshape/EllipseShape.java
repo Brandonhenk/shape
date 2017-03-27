@@ -23,7 +23,7 @@ abstract public class EllipseShape{
   }
 
   abstract public getCircumference()
-  public final getArea(){
+  public final double getArea(){
     return this.getMinorAxis() * this.getMajorAxis() * Math.PI;
   }
 
