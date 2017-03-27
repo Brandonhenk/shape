@@ -8,20 +8,26 @@ abstract public class EllipseShape{
     this.setMinorAxis(minorAxis);
     this.setMajorAxis(majorAxis);
   }
-  public getMinorAxis(){ return this.minorAxis;}
+  public final getMinorAxis(){ return this.minorAxis;}
 
-  double setMinorAxis(double minorAxis){
+  final double setMinorAxis(double minorAxis){
     this.minorAxis = minorAxis;
     return this.minorAxis;
   }
 
-  public getMajorAxis(){return this.majorAxis;}
+  public final getMajorAxis(){return this.majorAxis;}
 
-  double setMajorAxis(double majorAxis){
+  final double setMajorAxis(double majorAxis){
     this.majorAxis = majorAxis;
     return this.majorAxis;
   }
 
   abstract public getCircumference()
-  abstract public getArea()
+  public final getArea(){
+    return this.getMinorAxis() * this.getMajorAxis() * Math.PI;
+  }
+
+  public String toString(){
+    return "minorAxis: " + minorAxis + "majorAxis: " + majorAxis + "Area: " + this.getArea();
+  }
 }
