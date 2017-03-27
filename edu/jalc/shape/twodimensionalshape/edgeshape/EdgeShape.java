@@ -1,6 +1,6 @@
 package edu.jalc.shape.twodimensionalshape.edgeshape;
 
-abstract public class EdgeShape extends Shape{
+abstract public class EdgeShape extends TwoDimensionalShape{
   private double width;
   private double height;
 
