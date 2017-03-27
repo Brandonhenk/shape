@@ -1,12 +1,12 @@
 package edu.jalc.shape.twodimensionalshape.edgeshape;
 
-abstract public class EdgeShape{
+abstract public class EdgeShape extends Shape{
   private double width;
   private double hight;
 
   public EdgeShape(double width, double hight){
-    this.setWidth();
-    this.setHight();
+    this.setWidth(width);
+    this.setHight(hight);
   }
 
   public double getWidth(){return this.width;}
