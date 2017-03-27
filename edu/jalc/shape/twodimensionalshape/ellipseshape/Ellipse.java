@@ -1,6 +1,6 @@
 package edu.jalc.shape.twodimensionalshape.ellipseshape;
 
-public class Ellipse extends EllipseShape{
+public final class Ellipse extends EllipseShape{
   public Ellipse(double minorAxis, double majorAxis){
     super(minorAxis, majorAxis);
   }
