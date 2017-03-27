@@ -1,4 +1,4 @@
-package edu.jalc.shape.ellipseshape;
+package edu.jalc.shape.twodimensionalshape.ellipseshape;
 
 abstract public class EllipseShape{
   private double minorAxis;
