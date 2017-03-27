@@ -23,8 +23,8 @@ abstract public class EdgeShape extends Shape{
     return this.height;
   }
 
-  abstract public getPerimeter()
-  abstract public getArea()
+  abstract public double getPerimeter()
+  abstract public double getArea()
 
   public String toString(){
     return "height" + height + "width" + width;
