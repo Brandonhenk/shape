@@ -1,4 +1,5 @@
 package edu.jalc.shape.twodimensionalshape.ellipseshape;
+import edu.jalc.shape.twodimensionalshape.TwoDimensionalShape;
 
 abstract public class EllipseShape extends TwoDimensionalShape{
   private double minorAxis;
@@ -8,21 +9,21 @@ abstract public class EllipseShape extends TwoDimensionalShape{
     this.setMinorAxis(minorAxis);
     this.setMajorAxis(majorAxis);
   }
-  public final getMinorAxis(){ return this.minorAxis;}
+  public final double getMinorAxis(){ return minorAxis;}
 
   final double setMinorAxis(double minorAxis){
     this.minorAxis = minorAxis;
     return this.minorAxis;
   }
 
-  public final getMajorAxis(){return this.majorAxis;}
+  public final double getMajorAxis(){return majorAxis;}
 
   final double setMajorAxis(double majorAxis){
     this.majorAxis = majorAxis;
     return this.majorAxis;
   }
 
-  abstract public getCircumference()
+  abstract public double getCircumference();
   public final double getArea(){
     return this.getMinorAxis() * this.getMajorAxis() * Math.PI;
   }

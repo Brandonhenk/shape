@@ -1,4 +1,5 @@
 package edu.jalc.shape.twodimensionalshape.ellipseshape;
+import edu.jalc.shape.twodimensionalshape.TwoDimensionalShape;
 
 public class Ellipse extends EllipseShape{
   public Ellipse(double minorAxis, double majorAxis){

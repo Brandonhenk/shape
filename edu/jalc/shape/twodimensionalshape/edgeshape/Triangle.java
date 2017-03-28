@@ -6,6 +6,6 @@ abstract public class Triangle  extends EdgeShape{
   }
 
   public final double getArea(){
-    return 1/2 * this.getWidth() * this.getHeight();
+    return this.getWidth() * this.getHeight()* .5;
   }
 }

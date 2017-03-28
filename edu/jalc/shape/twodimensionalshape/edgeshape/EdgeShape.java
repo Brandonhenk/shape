@@ -1,4 +1,5 @@
 package edu.jalc.shape.twodimensionalshape.edgeshape;
+import edu.jalc.shape.twodimensionalshape.TwoDimensionalShape;
 
 abstract public class EdgeShape extends TwoDimensionalShape{
   private double width;
@@ -9,22 +10,22 @@ abstract public class EdgeShape extends TwoDimensionalShape{
     this.setHeight(height);
   }
 
-  public double getWidth(){return this.width;}
+  public final double getWidth(){return this.width;}
 
   double setWidth(double width){
     this.width = width;
     return this.width;
   }
 
-  public double getHeight(){return this.height;}
+  public final double getHeight(){return this.height;}
 
   double setHeight(double height){
     this.height = height;
     return this.height;
   }
 
-  abstract public double getPerimeter()
-  abstract public double getArea()
+  abstract public double getPerimeter();
+  abstract public double getArea();
 
   public String toString(){
     return "height" + height + "width" + width;
